@@ -1,29 +1,33 @@
-@media screen and (max-width:600px){
+@media screen and (max-width:604px){
 
 
 body{ 
     margin: 0px;
+    border: 2px solid aqua;
 }
 /*La partie Header du site web*/
-.logo{ 
-  /*  border: 1px solid orange;*/
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-    padding-top: 15px;
-}
-.img-logo{ 
-    height: 40%;
-    width: 53%;
-    object-fit: cover;
-}
 header{ 
-   /* border: 2px solid red;*/
-    height: 345px;
-    background-color: #F4F4F4;
-    display: flex;
-    flex-direction: column;
+    height: 60px;
 }
+.wrapp1{ 
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+nav{ 
+    display: none;
+}
+.logo{ 
+    width: 200px;
+    height: 60%;
+}
+a{ 
+    color: black;
+}
+/*La fin du header du site web*/
+
+/*La partie sous header*/
 .search{ 
     /*border: 1px solid gray;*/
     border-top: 3px solid #CECECE;
@@ -56,31 +60,23 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #F4F4F4;
+    padding-bottom: 50px;
 }
 .P1-R{ 
     font-family: 'Roboto', sans-serif;
     font-size: 27px;
     font-weight: 900;
     margin-bottom: 0px;
+    text-align: center;
 }
-.sous-P1-R{ 
-    font-family: 'Roboto', sans-serif;
-    font-size: 27px;
-    font-weight: 900;
-    margin: 0px;
-}
-
 .P2-R{ 
     font-family: 'Roboto', sans-serif;
-    color: grey;
+    font-size: 17px;
     margin-bottom: 0px;
-    font-size: 20px;
-}
-.sous-P2-R{
-    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
     color: grey;
-    margin-top: 0px;
-    font-size: 20px;
 }
 .bt-explorez{ 
     height: 50px;
@@ -94,9 +90,9 @@ header{
     padding: 0px 20px;
     box-shadow:0px 0px 20px #0000002e;
 }
-/*La fin de la partie Header du site web*/
+/*La fin de la partie sous-header*/
 
-/*La partie Body di site web*/
+/*La partie Body du site web*/
 .fct{ 
    /* border: 2px solid blue;*/
     height: auto;
@@ -141,11 +137,12 @@ header{
     height: 100%;
     border-radius: 20px;
     display: flex;
+    overflow: auto;
     align-items: center;
     background-color: #F4F4F4;
     box-shadow:0px 0px 20px #0000002e;
 }
-.fa-mobile-alt,.fa-bars,.fa-store{ 
+.fa-mobile-alt,.fa-list-ul,.fa-store{ 
     margin-left: 27px;
     margin-right: 15px;
 }
@@ -177,6 +174,7 @@ article{
   /*  border: 1px solid red;*/
     height: 100px;
     border-radius: 20px;
+    overflow: auto;
     height: 250px;
     box-shadow:0px 0px 20px #0000002e;
 }
@@ -241,7 +239,7 @@ article:hover{
 .fa-heart{ 
     color: purple;
 }
-/*La fin de la partie Body di site web*/
+/*La fin de la partie Body du site web*/
 
 
 /*Le footer*/
@@ -271,8 +269,20 @@ footer{
     margin-left: 20px;
     margin-right: 20px;
 }
-.div1,.div2,.div3,.div4{
+.div1,.div2{
   /*  border: 3px solid blue;*/
+    width: 280px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.div3,.div4{ 
+    width: 280px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.div4{ 
     width: 280px;
     height: 40px;
     display: flex;
@@ -292,4 +302,181 @@ a{
 .descri-foot:hover{ 
     text-decoration: underline;
 }
+
+/*Le CSS des articles*/
+
+
+.logo{ 
+    width: 70%;
+    min-width: 200px;
+}
+.sp-arrow{ 
+    /*border: 1px solid red;*/
+    width: 30%;
+    padding-left: 10px;
+}
+.picture-palette{ 
+    /*border: 2px solid blue;*/
+    height: 309px;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("sous-images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 88%;
+    object-fit: cover;
+}
+
+
+
+.picture-la-francaise{ 
+    /*border: 2px solid blue;*/
+    height: 309px;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("sous-images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 88%;
+    object-fit: cover;
+}
+
+.picture-note-enchantes{ 
+    /*border: 2px solid blue;*/
+    height: 330px;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("sous-images/stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 109%;
+    object-fit: cover;
+}
+
+.picture-delices-sens{ 
+    /*border: 2px solid blue;*/
+    height: 309px;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("sous-images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 88%;
+    object-fit: cover;
+}
+.img-la-fr{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Menu{ 
+  /*  border: 2px solid red;*/
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-top: -90px;
+    background-color: #F4F4F4;
+}
+.heade-menu{ 
+   /* border: 3px solid blue;*/
+    height: auto;
+    padding-top: 15px;
+    height: auto;
+}
+.p-title-m{ 
+    display: inline-block;
+    font-size: 8vw;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: "Fira Sans";
+    text-align: center;
+    margin-top: 0px;
+    width: 70%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.plat{ 
+    /*border: 1px solid green;*/
+    padding: 0px 10px;
+}
+.title-plat-1{ 
+    margin-top: 0px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 4vw;
+    margin-bottom: -5px;
+}
+.separator{ 
+    display: inline-block;
+    width: 10%;
+    border: 1px solid #95DAC4;
+}
+.Entres{ 
+    /*border:2px solid red;*/
+    margin-top: 15px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    row-gap: 22px;
+    margin-bottom: 40px;
+}
+.plats{
+    height: 80px;
+    border-radius: 20px;
+    background-color: #96DAC4;
+    box-shadow:0px 0px 20px #0000002e;
+}
+.descri-plats{ 
+
+    border: 1px solid red;
+    display: inline-block;
+    height: 100%;
+    border-radius: 20px;
+    width: 100%;
+    background-color: white;
+    
+}
+.animation{ 
+    border: 1px solid blue;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.descri-plats:hover{
+    transition-duration: 0.4s;
+    width: 80%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+
+
+.Entres-last{ 
+    /*border:2px solid red;*/
+    margin-top: 15px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    row-gap: 22px;
+}
+.div-CMD{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* border: 2px solid blue;*/
+    height: 140px;
+}
+.bt-commande{ 
+    height: 58px;
+    width: 211px;
+    border-radius: 40px;
+    color: #EEEEEE;
+    border: 0px;
+    background: linear-gradient(180deg, #E47AF6, #9356DC);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 0px 20px;
+    box-shadow:0px 0px 20px #0000002e;   
+}
+
 }
