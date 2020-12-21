@@ -1,9 +1,10 @@
-@media screen and (max-width:604px){
+@media screen and (max-width:610px){
 
 
 body{ 
     margin: 0px;
-    border: 2px solid aqua;
+    padding: 0px;
+    /*border: 2px solid aqua;*/
 }
 /*La partie Header du site web*/
 header{ 
@@ -90,6 +91,11 @@ a{
     padding: 0px 20px;
     box-shadow:0px 0px 20px #0000002e;
 }
+.bt-explorez:hover{ 
+    background: linear-gradient(180deg, #D38CEA, #D38CEA);
+    box-shadow:0px 0px 30px #9C9C9C;
+}
+
 /*La fin de la partie sous-header*/
 
 /*La partie Body du site web*/
@@ -217,10 +223,11 @@ article:hover{
 }
 .p-arti{
     margin-top: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     margin-left: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
+    font-size: 19px;
 }
 .sp-arti{
     margin-top: 2px;
@@ -229,15 +236,27 @@ article:hover{
     font-family: 'Roboto', sans-serif;
 }
 .div-icone-arti{ 
-   /* border: 1px solid red;*/
+    border: 1px solid red;
     display: block;
-    width: auto;
-    margin-top: 10px;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
     float: right;
+    text-align: center;
+    color: blue;
+}
+.div-icone-arti:hover{ 
+    border: 1px solid red;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    float: right;
+    text-align: center;
+    color: purple;
 }
 .fa-heart{ 
-    color: purple;
+    font-size: 30px;
 }
 /*La fin de la partie Body du site web*/
 
@@ -303,7 +322,7 @@ a{
     text-decoration: underline;
 }
 
-/*Le CSS des articles*/
+/*Le CSS des pages articles*/
 
 
 .logo{ 
@@ -367,33 +386,33 @@ a{
 }
 
 .Menu{ 
-  /*  border: 2px solid red;*/
+    border: 2px solid red;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     margin-top: -90px;
     background-color: #F4F4F4;
 }
 .heade-menu{ 
-   /* border: 3px solid blue;*/
+    border: 3px solid blue;
     height: auto;
     padding-top: 15px;
-    height: auto;
+    display: flex;
+    align-items: center;
 }
-.p-title-m{ 
-    display: inline-block;
-    font-size: 8vw;
-    font-weight: bolder;
-    font-style: italic;
-    font-family: "Fira Sans";
-    text-align: center;
+.title-restaurant{ 
+    font-family: 'Shrikhand', cursive;
     margin-top: 0px;
-    width: 70%;
-    margin-right: 20px;
+    margin-bottom: 0px;
+    font-size: 7vw;
     margin-left: 20px;
+    margin-right: 10px;
+    width: 70%;
 }
+
 .plat{ 
     /*border: 1px solid green;*/
     padding: 0px 10px;
+    margin-top: 20px;
 }
 .title-plat-1{ 
     margin-top: 0px;
@@ -419,17 +438,15 @@ a{
 .plats{
     height: 80px;
     border-radius: 20px;
-    background-color: #96DAC4;
     box-shadow:0px 0px 20px #0000002e;
+    background-color: white;
 }
 .descri-plats{ 
 
-    border: 1px solid red;
     display: inline-block;
     height: 100%;
     border-radius: 20px;
     width: 100%;
-    background-color: white;
     
 }
 .animation{ 
@@ -477,6 +494,11 @@ a{
     font-size: 17px;
     padding: 0px 20px;
     box-shadow:0px 0px 20px #0000002e;   
+}
+.bt-commande:hover{ 
+    background: linear-gradient(180deg, #D38CEA, #D38CEA);
+    box-shadow:0px 0px 30px #9C9C9C;
+
 }
 
 }
