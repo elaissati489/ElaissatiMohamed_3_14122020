@@ -485,7 +485,7 @@
         margin-top: 0px;
         font-family: 'Roboto', sans-serif;
         text-transform: uppercase;
-        font-size: 4vw;
+        font-size: 3vw;
         margin-bottom: -5px;
     }
     .separator{ 
@@ -493,7 +493,7 @@
         width: 10%;
         border: 1px solid #95DAC4;
     }
-    .Entres{ 
+    .div-entre{ 
         /*border:2px solid red;*/
         margin-top: 15px;
         display: grid;
@@ -508,31 +508,18 @@
         box-shadow:0px 0px 20px #0000002e;
         background-color: white;
     }
-    .descri-plats{ 
-    
-        display: inline-block;
-        height: 100%;
-        border-radius: 20px;
-        width: 100%;
-        background-color: white;
-        
-    }
-    .animation{ 
-        border: 1px solid blue;
-        width: 100%;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-    }
-    .descri-plats:hover{
-        transition-duration: 0.4s;
-        width: 80%;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }
+    .Plats-titre{ 
+        /* border:2px solid red;*/
+         margin-top: 15px;
+         display: grid;
+         grid-template-rows: repeat(3, 1fr);
+         grid-template-columns: 1fr;
+         row-gap: 22px;
+         margin-bottom: 40px;
+     }
+
      
-    .Entres-last{ 
+     .Desserts{ 
         /*border:2px solid red;*/
         margin-top: 15px;
         display: grid;
