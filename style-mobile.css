@@ -1,4 +1,4 @@
-@media screen and (max-width:610px){
+@media screen and (max-width:611px){
 
 
 body{ 
@@ -95,6 +95,7 @@ a{
 .bt-explorez:hover{ 
     background: linear-gradient(180deg, #D38CEA, #D38CEA);
     box-shadow:0px 0px 30px #9C9C9C;
+    transition-duration: 1s;
 }
 
 /*La fin de la partie sous-header*/
@@ -257,7 +258,7 @@ article:hover{
 .fa-plein-acceuil:hover{ 
     opacity: 1;
     color: #E47AF6;
-    transition-duration: 0.5s;
+    transition-duration: 2.5s;
 }
 /*La fin de la partie Body du site web*/
 
@@ -294,6 +295,7 @@ footer{
     width: 280px;
     height: 40px;
     display: flex;
+    margin-bottom: 15px;
     align-items: center;
 }
 .div3,.div4{ 
@@ -325,32 +327,29 @@ a{
 
 /*Le CSS des pages articles*/
 
-
 .logo{ 
-    width: 70%;
     min-width: 200px;
 }
 .sp-arrow{ 
     /*border: 1px solid red;*/
-    width: 30%;
-    padding-left: 10px;
+    position: absolute;
+    margin: 0px 20px;
+    left: 10px;
+    font-size: 20px;
 }
 .picture-palette{ 
-    /*border: 2px solid blue;*/
-    height: 309px;
-    padding: 0px;
-    margin: 0px;
-    background-image: url("sous-images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 88%;
+    border: 2px solid green;
+    height: 400px;
+    width: 100%;
+}
+.img-presentation{ 
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
-
-
-
 .picture-la-francaise{ 
     /*border: 2px solid blue;*/
-    height: 309px;
+    height: 409px;
     padding: 0px;
     margin: 0px;
     background-image: url("sous-images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
@@ -361,23 +360,17 @@ a{
 
 .picture-note-enchantes{ 
     /*border: 2px solid blue;*/
-    height: 330px;
+    height: 430px;
     padding: 0px;
     margin: 0px;
-    background-image: url("sous-images/stil-u2Lp8tXIcjw-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 109%;
     object-fit: cover;
 }
 
 .picture-delices-sens{ 
     /*border: 2px solid blue;*/
-    height: 309px;
+    height: 430px;
     padding: 0px;
     margin: 0px;
-    background-image: url("sous-images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 88%;
     object-fit: cover;
 }
 .img-la-fr{ 
@@ -391,6 +384,9 @@ a{
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     margin-top: -90px;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
     background-color: #F4F4F4;
 }
 .heade-menu{ 
@@ -399,6 +395,7 @@ a{
     padding-top: 15px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .title-restaurant{ 
     font-family: 'Shrikhand', cursive;
@@ -411,47 +408,55 @@ a{
 }
 .fa-plein-PG{ 
     opacity: 0;
-    transform: translateX(-30px);
+    font-size: 25px;
+    transform: translateX(-27px);
 }
 
 .fa-plein-PG:hover{ 
     opacity: 1;
+    cursor: pointer;
     color: #E47AF6;
-    transition-duration: 0.5s;
+    transition-duration: 2.5s;
 }
 .fa-plein-LF{ 
     opacity: 0;
-    transform: translateX(-30px);
+    font-size: 25px;
+    transform: translateX(-27px);
 }
 
 .fa-plein-LF:hover{ 
     opacity: 1;
+    cursor: pointer;
     color: #E47AF6;
-    transition-duration: 0.5s;
+    transition-duration: 2.5s;
 }
 .fa-plein-NE{ 
     opacity: 0;
-    transform: translateX(-30px);
+    font-size: 25px;
+    transform: translateX(-27px);
 }
 
 .fa-plein-NE:hover{ 
     opacity: 1;
+    cursor: pointer;
     color: #E47AF6;
-    transition-duration: 0.5s;
+    transition-duration: 2.5s;
 }
 .fa-plein-DS{ 
     opacity: 0;
-    transform: translateX(-30px);
+    font-size: 25px;
+    transform: translateX(-27px);
 }
 
 .fa-plein-DS:hover{ 
     opacity: 1;
+    cursor: pointer;
     color: #E47AF6;
-    transition-duration: 0.5s;
+    transition-duration: 2.5s;
 }
 .plat{ 
     /*border: 1px solid green;*/
-    padding: 0px 10px;
+    padding: 0px 20px;
     margin-top: 20px;
 }
 .title-plat-1{ 
@@ -574,16 +579,79 @@ a{
 }
 
 .plats{
-    height: 80px;
+    height: auto;
+    cursor: pointer;
+    width: 100%;
+    min-height: 100px;
     border-radius: 20px;
     box-shadow:0px 0px 20px #0000002e;
-    background-color: white;
-    border: 1px solid blue;
+   /* border: 1px solid blue;*/
+    overflow: hidden;
 }
-
-
-
-
+.description{ 
+    /* border: 1px solid red;*/
+     height: 100%;
+     padding-left: 10px;
+     width:100%;
+     background-color: white;
+     float: left;
+     border-top-left-radius: 20px;
+     border-bottom-left-radius: 20px;
+ }
+ h2{ 
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     font-size: 20px;
+     font-family: 'Roboto', sans-serif;
+     font-weight: bold;
+     margin: 4px;
+     margin-left: 0px;
+     margin-top: 13px;
+     position: relative;
+     top: 7px;
+    /* border: 1px solid blue;*/
+ }
+ .sp-I{ 
+     font-family: 'Roboto', sans-serif;
+    /* border: 1px solid blue;*/
+     width: 155px;
+     font-size: 16px;
+     position: relative;
+     top: 12px;
+ 
+ }
+ .prix{ 
+     /*border: 1px solid orange;*/
+     float: right;
+     font-family: 'Roboto', sans-serif;
+     margin-right: 14px;
+     position: relative;
+     top: 12px;
+     margin-right: 25px;
+ }
+ .div-spinner{ 
+    /* border: 2px solid red;*/
+     height: 100%;
+     background-color: #99E2D0;
+     font-size: 30px;
+     display: flex;
+     color: white;
+     align-items: center;
+     justify-content: center;
+ }
+ .fa-check-circle{ 
+     transform: rotate(90deg);
+ }
+ .description:active{ 
+     width: 70%;
+     transition-duration: 1s;
+ }
+ .plats:active .fa-check-circle{
+     transition-duration: 1s;
+     transform: rotate(360deg);
+ }
+ 
 
 
 
@@ -614,6 +682,7 @@ a{
 .bt-commande:hover{ 
     background: linear-gradient(180deg, #D38CEA, #D38CEA);
     box-shadow:0px 0px 30px #9C9C9C;
+    transition-duration: 1s;
 
 }
 /*CSS des Animation du site web */
@@ -631,7 +700,7 @@ a{
     height: 2265px;
     animation-name: anime;
     animation-fill-mode: forwards;
-    animation-duration: 10s;
+    animation-duration: 13s;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     overflow: hidden;
@@ -646,7 +715,7 @@ a{
     border-top-color: #9356DC;
     border-bottom-color: #9356DC;
     border-radius: 50%;
-    animation: chargeur 4s linear 1;
+    animation: chargeur 6s linear 1;
 }
 .loading-title{ 
     font-family: 'Shrikhand', cursive;
@@ -681,7 +750,7 @@ a{
  /*le css des plats*/
 
  @keyframes fadeinup{
-    from{opacity: 0; top: 40px;}
+    from{opacity: 0; top: 60px;}
     to{opacity: 1; top: 0px;}
 }
 /*Fin du animtion en css des plats*/
