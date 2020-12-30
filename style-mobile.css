@@ -333,12 +333,22 @@ a{
 .sp-arrow{ 
     /*border: 1px solid red;*/
     position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
     margin: 0px 20px;
     left: 10px;
     font-size: 20px;
 }
+.sp-arrow:hover{ 
+    background-color: #ECECEC;
+    transition-duration: 0.4s;
+}
 .picture-palette{ 
-    border: 2px solid green;
+    /*border: 2px solid green;*/
     height: 400px;
     width: 100%;
 }
@@ -643,7 +653,7 @@ a{
  .fa-check-circle{ 
      transform: rotate(90deg);
  }
- .description:active{ 
+.description:active{ 
      width: 70%;
      transition-duration: 1s;
  }
