@@ -619,7 +619,7 @@
         height: auto;
         cursor: pointer;
         width: 100%;
-        min-height: 100px;
+        min-height: 90px;
         border-radius: 20px;
         box-shadow:0px 0px 20px #0000002e;
        /* border: 1px solid blue;*/
@@ -643,7 +643,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        font-size: 20px;
+        font-size: 19px;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
         margin-right: 4px;
@@ -656,7 +656,7 @@
         font-family: 'Roboto', sans-serif;
        /* border: 1px solid blue;*/
         width: 155px;
-        font-size: 17px;
+        font-size: 15px;
     }
     .prix{ 
        /* border: 1px solid orange;*/
