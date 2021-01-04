@@ -696,11 +696,11 @@
     .fa-check-circle{ 
         transform: rotate(90deg);
     }
-    .description:active{ 
+    .description:hover{ 
         width: 70%;
         transition-duration: 1s;
     }
-    .plats:active .fa-check-circle{
+    .plats:hover .fa-check-circle{
         transition-duration: 1s;
         transform: rotate(360deg);
     }
