@@ -622,13 +622,19 @@ a{
      padding-left: 10px;
     /* border: 1px solid blue;*/
  }
+ .sous-descrit{ 
+    /* border: 1px solid red;*/
+     display: flex;
+     position: relative;
+     top: 7px;
+ }
  .sp-I{ 
      font-family: 'Roboto', sans-serif;
      /*border: 1px solid blue;*/
-     width: 64%;
+     width: 85%;
      font-size: 15px;
      position: relative;
-     top: 12px;
+     /*top: 12px;*/
      padding-left: 10px;
      display: inline-block;
      text-overflow: ellipsis;
@@ -637,11 +643,11 @@ a{
  }
  .prix{ 
     /* border: 1px solid orange;*/
-     float: right;
      font-family: 'Roboto', sans-serif;
      position: relative;
-     top: 12px;
+     /*top: 12px;*/
      margin-right: 17px;
+     margin-left: 5px;
  }
  .div-spinner{ 
     /* border: 2px solid red;*/
